@@ -1,0 +1,174 @@
+/* --------------MAIN----------------------*/
+
+.html {
+	font-size: 16px;
+
+}
+
+body {
+	font-size: 62.5%;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-image: url(https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+
+}
+
+ /*--------------CONTAINER----------------------*/
+
+.container {
+	width: 50%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+
+.container h1 {
+	font-size: 2.6em;
+	color: #DDD;
+	text-shadow: 1px 0px 7px rgba(0, 0, 0, 1);
+	font-family: 'Volkhov', serif;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.small-container {
+	font-size: 2.8em;
+	font-weight: bold;
+	width: 15%;
+	height: 1.4em;
+	margin-top: 0.2em; 
+	color: #DDD;
+	text-shadow: 1px 0px 7px rgba(0, 0, 0, 1);
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+
+
+.icon {
+	display: flex;
+}
+
+
+/* ------------TEMPERATYRE ANIMATION-------------*/
+
+
+.content {
+	position: absolute;
+	left: 3px;
+	transition: top 0.7s ease-in-out;
+}
+
+#temperature {
+	top: 0;
+	margin: 0 auto;
+	padding-top: 0;
+	left: 0;
+	right: 0;
+}
+
+.small-container:hover #temperature,
+.small-container:focus #temperature
+ {
+	top: -1.6em;
+}
+
+#fahrenheit {
+	top: 1.4em;
+	margin: 0 auto;
+	padding-top: 0;
+	left: 0;
+	right: 0;
+}
+
+.small-container:hover #fahrenheit,
+.small-container:focus #fahrenheit {
+	top: 0;
+}
+
+
+/* -----------------CONTAINER---------*/
+
+
+.container ul {
+	font-size: 1.6em;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.container {
+		width: 80%;
+	}
+
+	.container ul {
+		font-size: 1.4em;
+	}
+
+	.small-container {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		width: 90%;
+	}
+
+	.container ul {
+		font-size: 1.2em;
+	}
+}
+
+.container li {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border-radius: 5px;
+	width: 30%;
+	color: #222;
+	background: rgba(200, 200, 200, 0.7);
+	transition: background 0.4s, width 0.4s;
+	-webkit-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.75);
+	padding: 1em 0;
+}
+
+.container li:hover {
+		background: rgba(200, 200, 200, 1.0);
+		width: 31%;
+}
+
+.copyright {
+	font-size: 1.4em;
+	color: #DDD;
+	text-shadow: 1px 0px 7px rgba(0, 0, 0, 1);
+}
